@@ -14,7 +14,16 @@ version of Ruby.
 
 ## How to use it
 
-TBD
+You can run it individually from your project's root folder:
+```
+docker run -it -v $(pwd):/app bartoffw/rails5
+```
+
+Or you can use [Docker Compose](https://docs.docker.com/compose/overview/)
+to run the entire environment **(this is not tested yet)**:
+```
+docker-compose up
+```
 
 
 ## Plans
