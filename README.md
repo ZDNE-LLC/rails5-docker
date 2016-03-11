@@ -14,22 +14,31 @@ version of Ruby.
 
 ## How to use it
 
+### Option 1
+You can build the image straight from the **Dockerfile**:
+```
+docker build .
+```
+
+### Option 2
 You can run it individually from your project's root folder:
 ```
 docker run -it -v $(pwd):/app bartoffw/rails5
 ```
 
-Or you can use [Docker Compose](https://docs.docker.com/compose/overview/)
-to run the entire environment **(this is not tested yet)**:
+### Option 3
+Or you can use [Docker Compose](https://docs.docker.com/compose/overview/) to run the entire environment:
 ```
 docker-compose up
 ```
+Before running Docker Compose you need to place the `docker-compose.yml` file
+in your project's root folder. No need to copy any other files.
 
 
 ## Plans
 
-My nearest future plans are to include Postgresql image and possibly
-some other images to make a full development environment ready for use.
+My nearest future plans are to include some other images to make a full
+development environment ready for use.
 
 
 # License

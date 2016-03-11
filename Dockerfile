@@ -14,6 +14,7 @@ RUN apt-get update && \
                        libgdbm-dev \
                        libgdbm3 \
                        libncurses5-dev \
+                       libpq-dev \
                        libreadline6-dev \
                        libssl-dev \
                        libyaml-dev \

@@ -6,6 +6,6 @@ web:
   ports:
     - 3000:3000
   volumes:
-    - '$(pwd)/src:/app'
+    - '.:/app'
   links:
     - db
