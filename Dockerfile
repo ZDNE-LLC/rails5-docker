@@ -18,6 +18,7 @@ RUN apt-get update && \
                        libreadline6-dev \
                        libssl-dev \
                        libyaml-dev \
+                       nodejs \
                        zlib1g-dev && \
     apt-get autoremove -y && \
     apt-get clean
