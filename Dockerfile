@@ -19,6 +19,7 @@ RUN apt-get update && \
                        libssl-dev \
                        libyaml-dev \
                        nodejs \
+                       libsqlite3-dev \
                        zlib1g-dev && \
     apt-get autoremove -y && \
     apt-get clean
@@ -39,6 +40,8 @@ RUN git clone --depth 1 https://github.com/sstephenson/rbenv.git /root/.rbenv &&
 
 ENV PATH /root/.rbenv/bin:/root/.rbenv/shims:$PATH
 RUN echo "export PATH=$PATH" >> /root/.bashrc
+RUN rails new test-app && \
+    mv test-app/* .
 
 CMD ["rails", "server", "-b", "0.0.0.0"]
 
