@@ -7,7 +7,7 @@ to be able to use it.
 
 ## Details
 
-Currently the image uses Rails 5 RC 1 riding Ruby 2.3.1. It will be
+Currently the image uses Rails 5 riding Ruby 2.3.1. It will be
 updated over time to always use the edge version of Rails and latest
 version of Ruby.
 

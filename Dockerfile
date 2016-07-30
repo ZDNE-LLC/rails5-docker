@@ -35,13 +35,11 @@ RUN git clone --depth 1 https://github.com/sstephenson/rbenv.git /root/.rbenv &&
     rbenv global '2.3.1' && \
     gem install bundler --no-ri --no-rdoc && \
     rbenv rehash && \
-    gem install rails -v '>= 5.0.0.rc1' --no-ri --no-rdoc && \
+    gem install rails -v '>= 5.0.0' --no-ri --no-rdoc && \
     rbenv rehash
 
 ENV PATH /root/.rbenv/bin:/root/.rbenv/shims:$PATH
 RUN echo "export PATH=$PATH" >> /root/.bashrc
-RUN rails new test-app && \
-    mv test-app/* .
 
 CMD ["rails", "server", "-b", "0.0.0.0"]
 
