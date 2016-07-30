@@ -1,8 +1,6 @@
 # Rails 5 docker image
 
 This image allows you to easily develop Rails 5 app.
-As Rails version 5 is still in beta, you need a custom image
-to be able to use it.
 
 
 ## Details
