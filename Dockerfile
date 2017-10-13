@@ -31,8 +31,8 @@ RUN git clone --depth 1 https://github.com/sstephenson/rbenv.git /root/.rbenv &&
     rm -rfv /root/.rbenv/.git && \
     export PATH="/root/.rbenv/bin:$PATH" && \
     eval "$(rbenv init -)" && \
-    rbenv install '2.3.1' && \
-    rbenv global '2.3.1' && \
+    rbenv install '2.4.2' && \
+    rbenv global '2.4.2' && \
     gem install bundler --no-ri --no-rdoc && \
     rbenv rehash && \
     gem install rails -v '>= 5.0.0' --no-ri --no-rdoc && \
